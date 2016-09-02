@@ -7,6 +7,8 @@ html, body {
     width: 100%;
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     color: #757575;
+    font-size:18px;
+
 }
 img {
     max-width: 100%;
@@ -456,26 +458,17 @@ label.valid {
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
 }
-.btn-twitter:hover {
-    color: #2BA9E0;
-}
 .btn-facebook:hover {
     color: #204385;
 }
-.btn-dribbble:hover {
-    color: #D92C85;
+.btn-github:hover {
+    color: #680489;
 }
 .btn-instagram:hover {
     color: #BAB1A8;
 }
 .btn-linkedin:hover {
     color: #015786;
-}
-.btn-pinterest:hover {
-    color: #CA2128;
-}
-.btn-google:hover {
-    color: #D3492C;
 }
 /* ==========================================================================
    Helper classes
@@ -528,3 +521,38 @@ label.valid {
         margin: 0 auto 20px auto;
     }
 }
+
+/* ==========================================================================
+   Color Settings
+   ========================================================================== */
+
+a:link,a:visited,.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus,a:hover,a:active,.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus{
+    color:#2ecc71;
+}
+
+.spacer,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
+
+background: #2ecc71;
+}
+
+#page-contact{
+    background: #2ecc71;
+    color:#fff;
+}
+
+#page-contact .spacer{
+    background: #fff;
+}
+
+#page-contact .section-title{
+    color:#fff;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:active{
+    color:#2ecc71;
+}
+

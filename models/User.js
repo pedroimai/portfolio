@@ -49,7 +49,8 @@ var UserSchema = new mongoose.Schema({
       },
    education:{  
       subtext: String,
-      list:[EducationSchema]
+      list:[EducationSchema],
+      complementary:[String]
    },
    experience:{  
       subtext: String,

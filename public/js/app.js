@@ -2,7 +2,6 @@
 angular.module('myportfolio', ['ngResource'])
 //---------------
 // Services
-//---------------
 .factory('User', ['$resource', function($resource){
   return $resource('/users', null, {
     query: {
