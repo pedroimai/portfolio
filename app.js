@@ -18,7 +18,6 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // connect to MongoDB
-//mongoose.connect('mongodb://admin:123456@ds161245.mlab.com:61245/todo-api')
 mongoose.connect(process.env.DATABASE)
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
