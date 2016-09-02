@@ -129,7 +129,7 @@
                 <div class="spacer"></div>
                 <p class="section-subtitle">{{user.skill.subtext}}</p>
             </header>
-                <div id="grid-controls-wrapper">
+                <div id="grid-controls-wrapper text-center waypoint-activator">
                     <ul class="nav nav-pills center-pills grid-controls">
                         <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
                         <li ng-repeat="category in user.skills.categories" class="filter"><a href="javascript:void(0)" data-filter="{{category.filter}}">{{category.name}}</a></li>
@@ -137,7 +137,7 @@
                 </div>
 
             <div class="row" >
-                <div class="grid-wrapper-skill">
+                <div class="grid-wrapper-skill text-center">
                     <div class="col-md-2 col-sm-4 mix {{skill.category}}"  ng-repeat="skill in user.skills.list">
                         <span class="chart" data-percent="{{skill.percent}}">
                         <span class="percent"></span>
@@ -205,7 +205,7 @@
     <section id="page-portfolio" class="page-portfolio">
         <div class="container">
             <header class="section-header">
-                <h2 class="section-title"><span>Porfolio</span></h2>
+                <h2 class="section-title"><span>Portfolio</span></h2>
                 <div class="spacer"></div>
                 <p class="section-subtitle">Coming soon!</p>
             </header>

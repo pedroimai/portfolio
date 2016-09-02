@@ -69,7 +69,7 @@ $(document).ready(function(){
         /* portfolio mixitup */
 
         $('.grid-wrapper-skill').waypoint(function() {
-    $('.chart').easyPieChart({
+            $('.chart').easyPieChart({
             barColor: '#2ecc71',
             size: '150',
             easing: 'easeOutBounce',
@@ -107,7 +107,7 @@ $(document).ready(function(){
         
     }, {
         triggerOnce: true,
-        offset: 'bottom-in-view'
+        offset: '50%'
     });
 
 })
