@@ -9,7 +9,7 @@ $(document).ready(function(){
         return false;
     });
 
-    /* For Bootstrap current state on portfolio sorting */
+    /* For Bootstrap current state on skill sorting */
 
     $('ul.nav-pills li a').click(function(e) {
         $('ul.nav-pills li.active').removeClass('active')
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 
     /* Magnific Popup */
-    $('.grid-wrapper').magnificPopup({
+    $('.portfolio-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
         gallery: {

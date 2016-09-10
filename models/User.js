@@ -1,9 +1,4 @@
 var mongoose = require('mongoose');
-/*
-var Skill = require('Skill');
-var Education = require('Education');
-var Experience = require('Experience');
-*/
 
 var CategorySchema = new mongoose.Schema({
    name: String,
@@ -23,6 +18,14 @@ var ExperienceSchema = new mongoose.Schema({
    date_init: Date,
    date_conclusion: Date,
    text: String
+});
+
+var PortfolioSchema = new mongoose.Schema({
+   name: String,
+   image: String,
+   institution: String,
+   date_creation: Date,
+   description: String,
 });
 
 var EducationSchema = new mongoose.Schema({
@@ -47,6 +50,10 @@ var UserSchema = new mongoose.Schema({
          categories:[CategorySchema],
          list:[SkillSchema]
       },
+   portfolio:{  
+         subtext: String,
+         list:[PortfolioSchema]
+      },      
    education:{  
       subtext: String,
       list:[EducationSchema],

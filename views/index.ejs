@@ -88,7 +88,7 @@
                     <p>FULL STACK WEB/MOBILE DEVELOPER</p>
                 </header>
                 <div class="social-icons">
-                <a href="https://www.linkedin.com/in/pedro-imai-gomes-03142440" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.linkedin.com/in/pedro-imai-gomes-03142440/en" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
                     <a href="https://pt-br.facebook.com/pedro.imai" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="https://github.com/pedroimai" class="btn btn-round btn-clear btn-github"><i class="fa fa-github"></i></a>
                     <a href="https://www.instagram.com/pedroimai" class="btn btn-round btn-clear btn-instagram"><i class="fa fa-instagram"></i></a>
@@ -206,9 +206,20 @@
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title"><span>Portfolio</span></h2>
-                <div class="spacer"></div>
-                <p class="section-subtitle">Coming soon!</p>
-            </header>
+                    <div class="spacer"></div>
+                    <p class="section-subtitle">{{user.portfolio.subtext}}</p>
+                </header>
+                 <div class="portfolio-gallery">
+                     <div ng-repeat="item in user.portfolio.list" class="col-md-4 portfolio-gallery-item">
+                            <h3 class="text-center">{{item.name}}</h3>
+                            <a href="{{item.image}}">
+                               <img src="{{item.image}}" alt="">
+                            </a>
+                            <p>{{item.description}}</p>
+                      </div>
+                </div>
+
+            
     </section>
     <!-- portolio ends -->
 
@@ -230,7 +241,6 @@
 
                 <div class="col-sm-7">
                     <h3>Get in Touch</h3>
-                    <!-- Configure the contact form by adding your email address on mail/contact_me.php line 17 -->
                     <form name="messageForm" class="form-horizontal" ng-submit="sendMessage()" novalidate>
                         <div class="control-group">
                             <label class="control-label" for="name">Name</label>
